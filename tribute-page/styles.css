@@ -1,0 +1,130 @@
+*{
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+body{
+  margin: 30px 15px;
+  background-color: black;
+}
+
+main{
+  padding: 20px 18px;
+  background-color: white;
+  max-width: 1550px;
+  margin: 0 auto;
+}
+
+main h1{
+  text-align: center;
+  padding: 0 20px;
+  font-size: 2.5rem;
+}
+
+#img-div{
+  max-width: 1400px;
+  max-height: 900px;
+  height:700px;
+   background-color: rgba(229, 227, 227, 0.76);
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin: 0 auto;
+   padding: 10px 0;
+}
+
+#img-div img{
+  max-width: 100%;
+  width: 500px;
+  max-height: 450px;
+  object-fit: cover;
+}
+#img-div figcaption{
+  margin: 20px 0;
+  padding: 0 5px;
+}
+
+section{
+  margin: 10px auto;
+  padding: 10px 2rem;
+  display: block;
+  unicode-bidi: isolate;
+  max-width: 800px;
+}
+section p{
+  line-height: 1.6;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+h2{
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 5.0rem 0;
+}
+
+ul{
+  display: block;
+  margin-block-start: 1.7em;
+  margin-block-end: 1.7em;
+  padding-inline-start: 0;
+  /*list-style-image: url("img/avenged-sevenfold-logo-png_seeklogo-384215.png");*/
+  list-style: none;
+}
+
+li{
+  display: list-item;
+  text-align: -webkit-match-parent;
+  position: relative;
+  padding-left: 70px; /* Adjust based on your desired image size */
+  margin-bottom: 1.7em;
+}
+
+li::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -10px;
+  width: 50px;
+  height: 50px;
+  background-image: url("img/avenged-sevenfold-logo-png_seeklogo-384215.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+li h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+li p {
+  margin-bottom: 0;
+}
+
+.quote{
+  font-style: italic;
+  color: black;
+  max-width: 800px;
+  max-height: 300px;
+  width: 50%;
+  margin: 4.5rem auto;
+}
+
+.quote span{
+  font-weight: bold;
+  color: #333;
+}
+
+.tribute-link, #tribute-link{
+  text-align: center;
+  margin-top: 2rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+#tribute-link a{
+  color: #007bff;
+  text-decoration: none;
+}
