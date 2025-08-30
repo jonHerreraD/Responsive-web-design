@@ -1,0 +1,148 @@
+*{
+    box-sizing: border-box;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    position: relative;
+    min-height: 100vh;
+}
+
+#navbar{
+    width: 400px;
+    height: 100vh;
+    flex-shrink: 0;
+    position: sticky;
+    top: 0;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #f8f9fa;
+    border-right: 2px solid #dee2e6;
+}
+
+#navbar h2{
+    font-size: 1.4rem;
+    font-weight: normal;
+    margin-bottom: 1rem;
+    text-align: justify;
+    padding: 1.5rem;
+}
+
+#navbar a{
+    text-decoration: none;
+    font-size: larger;
+    text-align: justify;
+    color: black;
+    padding: 1rem 2rem;
+    border-bottom:  2px solid #dee2e6;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    
+}
+
+#navbar a:hover{
+    background-color: gray;
+    color: white;
+    transform: translateX(5px);
+}
+
+#main-doc{
+    padding: 1rem 4rem;
+    flex: 1;
+    overflow-y: auto;
+    text-align: justify;
+    background-color: #ffffff;
+}
+
+.main-section{
+    max-width: 60vw;
+    margin: 1.5rem auto 3rem auto;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.main-section:last-child {
+    border-bottom: none;
+}
+
+.main-section header h1 {
+    color: #212529;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.main-section p {
+    line-height: 1.6;
+    color: #495057;
+    margin-bottom: 15px;
+}
+
+.main-section ul{
+    margin: 1rem 0;
+}
+
+.main-section li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+    color: #495057;
+}
+
+pre {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 15px 0;
+    overflow-x: auto;
+}
+
+code {
+    font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+    font-size: 0.9rem;
+    color: #e83e8c;
+}
+
+pre code {
+    color: #495057;
+}
+
+/* Tablet styles (768px and below) */
+        @media (max-width: 768px) {
+            #navbar{
+                display: none;
+            }
+            
+            .container{
+                flex-direction: column;
+            }
+            
+            #main-doc{
+                padding: 1rem 2rem;
+            }
+            
+            .main-section{
+                max-width: 100%;
+                margin: 1rem 0 2rem 0;
+            }
+
+        }
+
+        /* Mobile styles (480px and below) */
+        @media (max-width: 480px) {
+            #main-doc{
+                padding: 1rem;
+            }
+            
+            .main-section header h1 {
+                font-size: 1.5rem;
+            }
+            
+            pre {
+                padding: 10px;
+                font-size: 0.8rem;
+            }
+        }
